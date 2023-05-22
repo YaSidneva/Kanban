@@ -1,0 +1,7 @@
+.board {
+    display: flex;
+    justify-content: space-evenly;
+    > *:not(:first-of-type) {
+      margin-left: 24px;
+    }
+  }

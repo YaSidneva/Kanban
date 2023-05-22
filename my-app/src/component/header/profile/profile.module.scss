@@ -1,0 +1,78 @@
+.profile {
+  display: flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+
+  .chevron {
+    &.up > svg {
+      transform: scaleY(-1);
+    }
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 2;
+    position: fixed;
+    top: 53px;
+    right: 16px;
+    min-width: 134px;
+    min-height: 60px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 4px;
+    padding: 8px 12px;
+  }
+}
+
+.select {
+  margin-left: 5px;
+  appearance: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  background-image: url("arrow.svg"); /* Устанавливаем изображение стрелки */
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-right: 20px; /* Добавляем отступ справа для размещения стрелки */
+  transition: transform 0.3s;
+}
+
+.select:hover {
+  cursor: pointer;
+}
+
+.menu::before {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: 100%;
+  right: 35px;
+  width: 8px;
+  height: 8px;
+  margin-bottom: -4px;
+  background: #fff;
+  transform: rotate(45deg);
+  transition: all 0.4s ease-in-out;
+}
+
+option {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+option:hover {
+  background-color: #ebecf0;
+  border-radius: 4px;
+}
+
+.select_focus {
+  outline: none;
+  transform-origin: 50% 50%;
+  transform: rotate(180deg);}

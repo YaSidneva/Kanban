@@ -1,0 +1,125 @@
+.column {
+  width: 282px;
+  min-height: 210px;
+
+  .header {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-size: 0.75em;
+    height: 48px;
+    color: #5e6c84;
+    text-transform: uppercase;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    position: sticky;
+    top: 0;
+    background-color: #e5e7ea;
+  }
+
+  .wrapper {
+    background-color: #f4f5f7;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-top: 10px;
+
+    .body {
+      padding: 0 6px 0 6px;
+    }
+
+    .footer {
+      padding: 12px 6px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.btn {
+  color: #5e6c84;
+  font-size: 18px;
+  line-height: 21px;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 105px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.btn_select {
+  color: #5e6c84;
+  border: none;
+  width: 102px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.btn_select:hover {
+  cursor: pointer;
+  background-color: #0079bf;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+input {
+  margin-top: 10px;
+  width: 100%;
+  min-height: 55px;
+  height: 100%;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.select {
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 2.5em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+
+.select::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #2b2e2e;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+.select:hover::after {
+  color: #23b499;
+}
+
+.select:hover {
+  cursor: pointer;
+}
+
+option:hover {
+  cursor: pointer;
+}

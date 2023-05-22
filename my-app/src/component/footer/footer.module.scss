@@ -1,0 +1,16 @@
+.footer {
+    height: var(--footer-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    background-color: #0067A3;
+    flex-shrink: 0;
+  
+    padding-left: 20px;
+    padding-right: 20px;
+  
+    span:last-of-type {
+      margin-left: 24px;
+    }
+  }
