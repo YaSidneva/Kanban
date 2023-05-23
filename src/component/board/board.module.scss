@@ -1,0 +1,24 @@
+.board {
+    display: flex;
+    justify-content: space-evenly;
+    > *:not(:first-of-type) {
+      margin-left: 24px;
+    }
+  }
+
+@media screen and (max-width: 375px)  {
+  .board {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    > *:not(:first-of-type) {
+      margin-left: 0;
+    }
+
+    > * {
+      min-height: auto;
+      margin-bottom: 20px;
+    }
+  }
+}

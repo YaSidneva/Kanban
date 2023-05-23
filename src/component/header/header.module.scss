@@ -15,3 +15,14 @@ font-size: 28px;
 line-height: 33px;
   }
 }
+
+@media screen and (max-width: 375px)  {
+  .header {
+    justify-content: flex-end;
+    background-color: #0079bf;
+  }
+
+  h1 {
+    display: none;
+  }
+}

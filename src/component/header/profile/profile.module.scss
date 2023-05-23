@@ -5,12 +5,6 @@
   cursor: pointer;
   user-select: none;
 
-  .chevron {
-    &.up > svg {
-      transform: scaleY(-1);
-    }
-  }
-
   .menu {
     display: flex;
     flex-direction: column;
@@ -28,16 +22,20 @@
   }
 }
 
+.up {
+  transform: scaleY(-1);
+}
+
 .select {
   margin-left: 5px;
   appearance: none;
   background: none;
   border: none;
   color: #ffffff;
-  background-image: url("arrow.svg"); /* Устанавливаем изображение стрелки */
+  background-image: url("arrow.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  padding-right: 20px; /* Добавляем отступ справа для размещения стрелки */
+  padding-right: 20px;
   transition: transform 0.3s;
 }
 

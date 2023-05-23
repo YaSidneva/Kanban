@@ -9,7 +9,7 @@ export const Board = () => {
         <div className={css.board}>
             {states.map(
                 (state) =>
-                    <Column key={state.id} name={state.name} state={state.state}/>
+                    <Column key={state.id} name={state.name} state={state.state} previousState={state.previousState}/>
             )}
         </div>
     )

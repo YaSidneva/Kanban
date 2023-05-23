@@ -12,10 +12,15 @@ font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
-
-
 }
 
 * {
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 375px)  {
+  body {
+    overflow-y: scroll;
+    background-color: #0079bf;
+  }
 }
